@@ -24,6 +24,34 @@ Nie wymaga modów — to czysty data pack (`pack_format 41`).
 > chunkach**. Już wczytany teren zostaje bez zmian — wszystko inne (sadzonki, komendy, dropy,
 > receptury) działa od razu.
 
+## Nic się nie dzieje po komendzie?
+
+To najczęstszy haczyk data packów: **generacja świata wczytuje się wyłącznie przy ładowaniu świata**.
+`/reload` przeładowuje funkcje, receptury, tablice łupów i tagi — ale **nie** rejestry worldgenu
+(`configured_feature`, `placed_feature`, `biome`). Jeśli wrzuciłeś paczkę do już otwartego świata
+i zrobiłeś `/reload`, to funkcje działają, ale `place feature sakura:...` nie zna jeszcze drzew,
+a komendy w funkcjach **nie pokazują błędów w czacie** — stąd wrażenie, że nic się nie dzieje.
+
+**Lekarstwo:** wyjdź do menu głównego (Save and Quit) i wejdź do świata ponownie.
+
+**Szybki test:** wpisz w czacie `/place feature sakura:` i spójrz na podpowiedzi.
+* Widzisz `sakura:sakura_tall` i resztę → rejestry są wczytane, a problem to miejsce (patrz niżej).
+* Nie widzisz nic → świat nie przeładował paczki, wyjdź i wejdź ponownie.
+
+**Za mało miejsca.** Drzewo stawia się tylko wtedy, gdy ma gdzie rosnąć: potrzebuje wolnego słupa
+5×5 kratek na kilkanaście kratek w górę. Pod dachem, w lesie albo w wykopie `place feature` zwróci
+„nie udało się" i nie postawi ani jednego bloku. Stań na otwartym terenie — albo zacznij od
+`/function sakura:variant/small`, które potrzebuje znacznie mniej przestrzeni.
+
+**Sprawdzanie błędów na piechotę.** Ta sama komenda wpisana ręcznie w czacie *pokaże* powód
+niepowodzenia (funkcje go połykają):
+
+```
+/place feature sakura:sakura_tall ~ ~ ~
+```
+
+Od wersji z tej paczki funkcje same meldują porażkę i podpowiadają, co sprawdzić.
+
 ## Co dodaje paczka
 
 ### 5 wariantów drzew sakura

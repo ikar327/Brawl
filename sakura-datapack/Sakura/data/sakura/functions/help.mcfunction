@@ -5,3 +5,4 @@ tellraw @s [{"text":"/function sakura:grove","color":"aqua"},{"text":" - caly ga
 tellraw @s [{"text":"/function sakura:petals","color":"aqua"},{"text":" - dywan z rozowych platkow","color":"gray"}]
 tellraw @s [{"text":"/function sakura:variant/small","color":"aqua"},{"text":" | ","color":"dark_gray"},{"text":"tall","color":"aqua"},{"text":" | ","color":"dark_gray"},{"text":"weeping","color":"aqua"},{"text":" | ","color":"dark_gray"},{"text":"ancient","color":"aqua"},{"text":" | ","color":"dark_gray"},{"text":"bush","color":"aqua"},{"text":" - konkretny wariant","color":"gray"}]
 tellraw @s [{"text":"Sadzonki wisni rosna teraz w 4 rozne drzewa sakura.","color":"gray","italic":true}]
+tellraw @s [{"text":"Nic sie nie dzieje? Generacja swiata wczytuje paczke tylko przy ladowaniu swiata - wyjdz do menu i wejdz ponownie.","color":"dark_gray","italic":true}]
