@@ -52,6 +52,19 @@ niepowodzenia (funkcje go połykają):
 
 Od wersji z tej paczki funkcje same meldują porażkę i podpowiadają, co sprawdzić.
 
+**Serwer nie wstaje / paczka „could not be parsed".** Sprawdź log — Minecraft wypisuje
+dokładnie, który plik i które pole odrzucił, np. `Value provider too high: 3 [2-4]` znaczy
+„pole przyjmuje najwyżej 3, a dostało zakres 2–4". Zanim wgrasz zmienione pliki, przepuść
+paczkę przez dołączony skrypt:
+
+```
+python3 validate.py
+```
+
+Sprawdza składnię JSON, referencje między plikami i zakresy liczb wymuszane przez kodeki 1.20.6
+(to na nich wyłożyła się pierwsza wersja paczki: `branch_count` w `cherry_trunk_placer`
+przyjmuje wyłącznie 1–3).
+
 ## Co dodaje paczka
 
 ### 5 wariantów drzew sakura
@@ -62,7 +75,7 @@ Od wersji z tej paczki funkcje same meldują porażkę i podpowiadają, co spraw
 | Klasyczna | `sakura:sakura_classic` | odpowiednik wiśni z vanilli + ule |
 | Wysoka | `sakura:sakura_tall` | 10–13 kratek, szeroka korona (promień 5) |
 | Płacząca | `sakura:sakura_weeping` | długie, zwisające kaskady liści |
-| Prastara | `sakura:sakura_ancient` | ogromna, 13–16 kratek, korona o promieniu 6 |
+| Prastara | `sakura:sakura_ancient` | ogromna, 13–16 kratek, 3 konary po 5–7 kratek, korona o promieniu 6 |
 | Krzew | `sakura:sakura_bush` | niski krzaczek wiśniowy do poszycia |
 
 ### Generacja świata

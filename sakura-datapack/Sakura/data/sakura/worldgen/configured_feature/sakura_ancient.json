@@ -43,22 +43,14 @@
         "distribution": [
           {
             "data": 3,
-            "weight": 2
-          },
-          {
-            "data": 4,
-            "weight": 2
-          },
-          {
-            "data": 5,
             "weight": 1
           }
         ]
       },
       "branch_horizontal_length": {
         "type": "minecraft:uniform",
-        "min_inclusive": 4,
-        "max_inclusive": 6
+        "min_inclusive": 5,
+        "max_inclusive": 7
       },
       "branch_start_offset_from_top": {
         "min_inclusive": -8,
