@@ -1,0 +1,28 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "chance": 0.06,
+        "feature": "sakura:sakura_ancient_checked"
+      },
+      {
+        "chance": 0.22,
+        "feature": "sakura:sakura_tall_checked"
+      },
+      {
+        "chance": 0.18,
+        "feature": "sakura:sakura_weeping_checked"
+      },
+      {
+        "chance": 0.15,
+        "feature": "sakura:sakura_small_checked"
+      },
+      {
+        "chance": 0.08,
+        "feature": "sakura:sakura_bush_checked"
+      }
+    ],
+    "default": "sakura:sakura_classic_checked"
+  }
+}

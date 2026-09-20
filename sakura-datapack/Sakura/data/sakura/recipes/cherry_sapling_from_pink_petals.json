@@ -1,0 +1,17 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "group": "sakura",
+  "pattern": [
+    "PPP",
+    "PPP",
+    "PPP"
+  ],
+  "key": {
+    "P": "minecraft:pink_petals"
+  },
+  "result": {
+    "id": "minecraft:cherry_sapling",
+    "count": 1
+  }
+}

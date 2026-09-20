@@ -1,0 +1,36 @@
+{
+  "parent": "sakura:root",
+  "display": {
+    "icon": {
+      "id": "minecraft:pink_petals"
+    },
+    "title": {
+      "text": "Hanami",
+      "color": "light_purple"
+    },
+    "description": {
+      "text": "Podziwiaj kwitnaca wisnie w gaju wisniowym"
+    },
+    "frame": "task",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "in_grove": {
+      "trigger": "minecraft:location",
+      "conditions": {
+        "player": [
+          {
+            "condition": "minecraft:entity_properties",
+            "entity": "this",
+            "predicate": {
+              "location": {
+                "biome": "minecraft:cherry_grove"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

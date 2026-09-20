@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "group": "sakura",
+  "ingredients": [
+    "minecraft:cherry_leaves",
+    "minecraft:cherry_leaves"
+  ],
+  "result": {
+    "id": "minecraft:pink_petals",
+    "count": 2
+  }
+}

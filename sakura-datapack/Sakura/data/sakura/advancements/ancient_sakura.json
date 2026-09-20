@@ -1,0 +1,33 @@
+{
+  "parent": "sakura:hanami",
+  "display": {
+    "icon": {
+      "id": "minecraft:cherry_log"
+    },
+    "title": {
+      "text": "Prastara Sakura",
+      "color": "light_purple"
+    },
+    "description": {
+      "text": "Zbierz 64 kloce wisniowe"
+    },
+    "frame": "goal",
+    "show_toast": true,
+    "announce_to_chat": true
+  },
+  "criteria": {
+    "logs": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:cherry_log",
+            "count": {
+              "min": 64
+            }
+          }
+        ]
+      }
+    }
+  }
+}

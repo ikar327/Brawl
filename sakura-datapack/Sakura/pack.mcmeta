@@ -1,0 +1,24 @@
+{
+  "pack": {
+    "pack_format": 41,
+    "supported_formats": {
+      "min_inclusive": 41,
+      "max_inclusive": 41
+    },
+    "description": [
+      {
+        "text": "❀ Sakura",
+        "color": "light_purple",
+        "bold": true
+      },
+      {
+        "text": " 1.20.6\n",
+        "color": "gray"
+      },
+      {
+        "text": "Kwitnace drzewa wisniowe",
+        "color": "white"
+      }
+    ]
+  }
+}
